@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+/* Colour variables (to be applied as needed)*/
+:root {
+  --black: black;
+  --bisque: bisque;
+}
+
+/* Global HTML styling */
+*{
+  font-family: Questrial;
+
+}
+
+html {
+  background-color: var(--bisque);
+}
+
+/* Mobile styling */
+
+.center-element{
+  text-align: center;
+}
+
+.width-100{
+  width: 100%;
+}
+
+.lower-pg{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.red-circle {
+  border-radius: 50%;
+  color: rgb(171, 0, 0);
+  background-color: rgb(244, 177, 177);
+  border-color: rgb(171, 0, 0);  
+}
+
+.red-circle:hover {
+  border-radius: 50%;
+  color: rgb(103, 2, 2);
+  background-color: rgb(241, 117, 117);
+}
+
+.display-grid {
+  display: grid;
+  grid-template-rows: auto 2fr;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.med-margin {
+  margin-top: 20px;
+}
+
+/* Desktop/tablet styling */
+
+@media screen and (min-width: 450px) {
+  .two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+  }
+  #todo-list {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #completes {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>JustDoIt</title>
+  </head>
+  <body>
+    <section id="add-new-task" class="text-align-center">
+      <h1>Just Do It</h1>
+      <h3>A simple, browser based to do list.</h3>
+      
+      <form id="task-form" class="task-form">
+        <label></label>
+        <input placeholder="Enter a task..." type="text" id="input-task" required/>
+        <button type="submit" id="submitTask">add task</button>
+      </form>
+      <button id="filter-incomplete-btn" class="med-margin">Show Incomplete Tasks</button>
+    </section>
+<div class="display-grid two-columns">
+  <section id="todos" class="">
+    <ul id="todo-list" class="list display-grid"></ul>
+  </section>
+  <section id="completes">
+    <ul id="done-list" class="list display-grid"></ul>
+  </section>
+</div>
+   
+    <template id="newTaskTemplate">
+      <li class="task">
+        <div class="task-box">
+          <input type="checkbox" class="todo-item"/>
+          <label class="task-text"></label>
+          <button class="red-circle" id="delete-button">x</button>
+        </div>
+      </li>
+    </template>
+  <footer class="center-element lower-pg width-100">© FAC27 2023</footer>
+  </body>
+  <script src="script.js"></script>
+  <script src="index.test.js"></script>
+</html>
